@@ -1,0 +1,19 @@
+{
+  "name": "todo-list-backend",
+  "version": "1.0.0",
+  "description": "the backend of the todo list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcpetersen111/todo-list-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcpetersen111/todo-list-backend/issues"
+  },
+  "homepage": "https://github.com/kcpetersen111/todo-list-backend#readme"
+}
