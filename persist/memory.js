@@ -13,11 +13,11 @@ function makeid(length) {
 
 
 const addTodo = function (todo) {
-    let id = makeid(8);
-    todo.id = id;
-    todo.test = "test";
+    // let id = makeid(8);
+    // todo.id = id;
+    // todo.test = "test";
     todo_db[todo.id] = todo;
-    console.log(todo_db);
+    // console.log(todo_db);
     return todo;
 };
 
@@ -44,13 +44,14 @@ const patchTodo = function(id,todoData) {
     for (const key in todoData) {
         todo_db[id][key] = todoData[key]
     }
-    console.log(todo_db)
+    // console.log(todo_db)
     return todo_db[id]
 
 }
 
 const deleteTodo = function(id){
     const todo = todo_db[id];
+    // console.log(todo_db[id]);
     delete todo_db[id];
     return todo;
 }
@@ -66,7 +67,7 @@ module.exports = {
     addTodo: addTodo,
     getTodo: getTodo,
     getTodos: getTodos,
-    delteteTodo: deleteTodo,
+    deleteTodo: deleteTodo,
     putTodo: putTodo,
     patchTodo: patchTodo,
 };
