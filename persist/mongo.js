@@ -4,16 +4,26 @@ const mongoose = require('mongoose');
 // connects to mongodb
 const db = mongoose.connection;
 
-const dotenv = require("dotenv");
-
-
+// const dotenv = require("dotenv");
 
 // const connectionString = `mongodb://{user}:{password}@{host}:{port}/{database}`;
+// const mongoURL = "cluster0.crhdmiu.mongodb.net";
+
 
 function connect(user, password, host, port,db){
     // const passwordFromENV = process.env.MONGO_PASSWORD
-    const connectionString = `mongodb+srv://${user}:${password}@cluster0.crhdmiu.mongodb.net/?retryWrites=true&w=majority`;
 
+    // console.log(user);
+    // console.log(password);
+
+    // user = "u";
+    // password = "p";
+
+    // const connectionString = `mongodb+srv://${user}:${password}@localhost/?retryWrites=true&w=majority`;
+    const connectionString = "mongodb+srv://@localhost/?retryWrites=true&w=majority";
+
+
+    // console.log(connectionString);
     mongoose.connect(connectionString,{
         useNewUrlParser: true,
         useUnifiedTopology: true,

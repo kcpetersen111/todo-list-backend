@@ -36,7 +36,7 @@ app.get("/todo/:id", (req, res) => {
             setTimeout(()=>{
                 console.log("Deleting id");
                 memory.deleteTodo(id);
-            },10000);
+            },1000);
         }
     }).catch((err)=>{
         res.status(500).json(err);

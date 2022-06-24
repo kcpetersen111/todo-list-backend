@@ -25,7 +25,6 @@ mongodb.setUpConnectionHandlers(()=>{
         console.log(`Server is running on port ${config.port}`);
     });
     
-    
 });
 mongodb.connect(config.user,config.password);
 
